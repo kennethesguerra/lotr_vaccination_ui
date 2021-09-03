@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { Container } from 'react-bootstrap';
+import { Route, 
+  HashRouter,
+  Switch } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './components/layout/Header';
+import Vaccinees from './components/vaccinees/Vaccinees';
+import Menus from './components/layout/Menus';
+
+class App extends Component {
+  render() {
+    return (
+      <HashRouter basename="/">
+        <div className="App">
+          <Container>
+            <Header />
+            <Menus />
+            <Switch>
+              <Route exact path="/" component={Vaccinees}></Route>
+              <Route exact path="/create" component={Vaccinees}></Route>
+              <Route exact path="/update" component={Vaccinees}></Route>
+            </Switch>
+          </Container>
+        </div>
+      </HashRouter>
+    );
+  }
 }
 
 export default App;

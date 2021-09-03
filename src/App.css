@@ -2,37 +2,52 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('https://wallpapercave.com/wp/wp2770503.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-container {
+  margin-top: 10px !important;
+  padding: 10px;
+  background: rgba(0, 0, 0, .6);
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-container {
+  background: rgba(0, 0, 0, .6);
+  padding: 10px;
+  margin-top: 10px !important;
+  border-radius: 5px;
+  text-align: left !important;
 }
 
-.App-link {
-  color: #61dafb;
+.menus-container {
+  text-align: right;
+  margin-top: 40px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary {
+  background: rgba(255, 127, 80, 1) !important;
+  border: none !important;
+}
+
+.vacinee-container {
+  color: #444;
+  background: #fff;
+  text-align: left;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 30px !important;
+}
+
+.modal-dialog {
+  color: #444 !important;
+}
+
+.vaccinee-action-bts-container {
+  float: right;
 }
